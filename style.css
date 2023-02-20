@@ -41,6 +41,10 @@ main img {
   flex-direction: column;
 }
 
+.group img{
+  width: 100%;
+}
+
 .item {
   flex: 1;
   margin: 10px;
@@ -64,12 +68,19 @@ header {
   color: #fff;
 }
 
-header nav ul li {
+header nav ul{
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+header nav ul li { 
   list-style-type: none;
 }
 
 header nav ul li a {
   color: #fff;
+  text-align: center;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
@@ -83,14 +94,18 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
   font-weight: bold;
+  margin-top: 5px;
 }
 
 form select,
 form input {
+  margin-top: 3px;
   margin-bottom: 20px;
   width: 180px;
 }
@@ -104,6 +119,13 @@ form button {
   width: 100%;
 }
 
+.stay-form{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
 /* -------  Footer ------- */
 
 footer {
@@ -116,4 +138,107 @@ footer p {
   padding: 20px;
 }
 
+
 /* -------  Media Query ------- */
+@media all and (min-width: 480px){
+
+  /*--------- Header ----------*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 10px 0px 10px;
+  
+  }
+
+  header .logo{
+    font-size: 32px;
+  }
+
+  /*-------- Form -----------*/
+  form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  form label, form select, form input{
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    
+  }
+
+  form button{
+    font-size: 16px;
+  }
+
+  .stay-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+
+  }
+
+  /*--------- Group -----------*/
+.group{
+  flex-direction: row;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+#ideas .group{
+  flex-direction: row;
+}
+
+#about  img{
+  width: 50%
+}
+
+.item{
+  flex-direction: row;
+
+}
+
+.photos{
+  display: flex;
+  flex: 2;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.item-double{
+  margin-left: 10px;
+}
+
+
+
+  /*---------- Host ----------*/
+
+  #host{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #host h2{
+    font-size: 16px;
+  }
+
+  #host p, li{
+    font-size: 12px;
+  }
+
+  #host img{
+    width: 100%;
+  }
+
+  #host .item{
+    flex: 1;
+  }
+}
