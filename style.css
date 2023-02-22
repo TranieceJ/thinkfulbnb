@@ -5,14 +5,14 @@ body {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 38px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -39,6 +39,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  font-size: 20px;
 }
 
 .group img{
@@ -48,10 +49,23 @@ main img {
 .item {
   flex: 1;
   margin: 10px;
+  font-size: 20px;
+}
+.item img{
+  width: 100%
 }
 
 .item-double {
   flex: 2;
+}
+
+.item-double p{
+  margin-bottom: 15px;
+}
+
+.photos{
+  margin-bottom: 15px;
+  
 }
 
 /* -------  Navigation ------- */
@@ -101,6 +115,7 @@ form {
 form label {
   font-weight: bold;
   margin-top: 5px;
+  font-size: 25px;
 }
 
 form select,
@@ -108,6 +123,7 @@ form input {
   margin-top: 3px;
   margin-bottom: 20px;
   width: 180px;
+  font-size: 20px;
 }
 
 form button {
@@ -170,7 +186,7 @@ footer p {
   }
 
   form button{
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .stay-form{
